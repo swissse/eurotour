@@ -1,6 +1,9 @@
 :root {
   --bg-color-blue: #62ABBB;
   --bg-color-blue_dark: #486A76;
+  --footer-bg-color: #2C4249;
+  --main-color: #fff;
+  --bg-light-color: #FEFEF2;
 }
 
 .header {
@@ -87,6 +90,117 @@ nav {
   gap: 25px;
 }
 
-.font-h {
+.font_h {
   font-family: "Manrope", sans-serif;
+}
+
+
+.main_form_title{
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid var(--bg-color-blue);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.active_section{
+  color: var(--bg-color-blue);
+}
+
+.main_form_input{
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--bg-color-blue_dark);
+
+  img{
+    object-fit: contain;
+  }
+}
+
+.style_inp{
+  padding: 10px 15px;
+  border: 1px solid var(--bg-color-blue);
+  border-radius: 10px;
+  height: 45px;
+}
+
+.wrap_input{
+  display: flex;
+  gap: 10px;
+}
+
+.custom_select_form{
+  max-width: 305px;
+}
+
+.main_form_inputs{
+  display: flex;
+  /* justify-content: center; */
+  gap: 7px;
+}
+
+.button_search{
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  background-color: var(--bg-color-blue);
+  color: var(--main-color);
+}
+
+.min_select{
+  width: 80px;
+}
+
+.btn_def{
+  padding: 16px 28px;
+  background-color: var(--bg-color-blue);
+  color: var(--bg-light-color);
+  font-size: 12px;
+  max-width: 130px;
+}
+
+.welcome_block{
+  position: relative;
+  width: 1360px;
+  height: 700px;
+  border-radius: 60px;
+  margin: 20px auto;
+  background: url(../img/header_scroll/bg_img_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .main_form{
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    width: 1100px;
+    margin: auto;
+    background-color: var(--bg-light-color);
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+
+  .welcome_text{
+    position: absolute;
+    bottom: 95px;
+    left: 65px;
+    font-weight: 100;
+    color: var(--bg-light-color);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    h1{
+      font-size: 52px;
+    }
+
+    p{
+      font-size: 24px;
+    }
+
+
+  }
 }
