@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <title>eurotour</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>eurotour</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="img/header/Vector Smart Object 1.png" alt="" />
+        <div class="header__container">
+          <div class="icon__container">
+            <div class="icon__text__container">
+              <img src="img/header/social/Phone.png" alt="" />
+              <p class="icon__text">+7 (953) 505 16-50</p>
+            </div>
+            <div class="icon__text__container">
+              <img src="img/header/social/Map pin.png" alt="" />
+              <p class="icon__text">Где купить</p>
+            </div>
+            <div class="icon__text__container">
+              <img src="img/header/social/Frame (1).png" alt="" />
+              <select class="custom-select">
+                <option value="" selected disabled>Вологда</option>
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="ekaterinburg">Екатеринбург</option>
+                <option value="kazan">Казань</option>
+              </select>
+            </div>
+            <div class="icon__text__container">
+              <img src="img/header/social/Vector.png" alt="" />
+              <select class="custom-select custom-select2">
+                <option value="" selected>₽ - русский</option>
+                <option value="moscow">$ - американский</option>
+              </select>
+            </div>
+          </div>
+          <div class="icon__container__2">
+            <img src="img/header/social/Layer_1.png" alt="" />
+            <img src="img/header/social/b.png" alt="" />
+            <img src="img/header/social/scales-svgrepo-com 1.png" alt="" />
+          </div>
+          <div class="icon__container__3">
+            <img src="img/header/social/user 1.png" alt="" />
+            <p class="icon__text">Войдите или зарегистрируйтесь</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav">
+          <button class="nav__btn">
+            <img src="img/header/Group 232.png" alt="" />
+            Меню
+          </button>
+          <ul class="nav__ul">
+            <li><a href="#">Тургайд</a></li>
+            <li><a href="#">Отели</a></li>
+            <li><a href="#">Горящие туры</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <img src="img/header/MINI SEARCH.png" alt="" />
+      </nav>
+    </header>
+    <main>
+      <section class="welcome_block">
+        <div class=" main_form">
+          <ul class="main_form_title">
+            <li class="active_section">Туры</li>
+            <li>Отели</li>
+          </ul>
+          <div class="main_form_inputs">
+            <div class="main_form_input">
+              <label for="">Откуда</label>
+              <input class="style_inp" type="text" placeholder="Вологда" />
+            </div>
+            <div class="main_form_input">
+              <label for="">Куда</label>
+              <div class="wrap_input style_inp">
+                <img src="img/form/search.png" alt="" />
+                <select class="custom_select_form">
+                  <option value="" selected disabled>Страна, город или отель</option>
+                  <option value="">Вологда</option>
+                  <option value="moscow">Москва</option>
+                  <option value="spb">Санкт-Петербург</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                  <option value="ekaterinburg">Екатеринбург</option>
+                  <option value="kazan">Казань</option>
+                </select>
+              </div>
+            </div>
+            <div class="main_form_input">
+              <label for="">Период вылета</label>
+              <input class="style_inp" type="date" placeholder="Даты вылета" />
+            </div>
+            <div class="main_form_input">
+              <label for="">Ночей</label>
+              <div class="wrap_input style_inp ">
+                <div></div>
+                <select class=" custom_select_form min_select" >
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="main_form_input">
+              <label for="">Туристы</label>
+              <div class="wrap_input style_inp">
+                <img src="img/form/people.png" alt="" />
+                <select class="custom_select_form min_select">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <button class="button_search style_inp">
+              <img src="img/form/magnifier_search.png" alt="">
+              <p>Поиск</p>
+            </button>
+          </div>
+        </div>
+        <div class="welcome_text">
+          <h1 class="font_h">Совершенный отдых в Таиланде</h1>
+          <p class="font_h">Для тех, кто выбирает комфорт</p>
+          <button class="btn_def">Выбрать тур</button>
+        </div>
+      </section>
+      <section class="last_minute_deals">
+        <div class="deals_title">
+          
+        </div>
+      </section>
+    </main>
+  </body>
   
-</body>
 </html>
+
+
