@@ -1,11 +1,11 @@
-/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: var(--text_color);
-  font-family: "Inter", sans-serif;
+  font-family:"Golos Text", sans-serif;
 }
 
 a {
@@ -58,10 +58,11 @@ p {
 }
 
 body {
+  background-color: #FEFEF2;
   min-height: 100vh;
   line-height: 1;
   text-rendering: optimizeSpeed;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: auto;
   position: relative;
   scroll-behavior: smooth;
