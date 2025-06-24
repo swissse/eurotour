@@ -233,7 +233,7 @@ nav {
   display: flex;
   gap: 5px;
   padding-inline: 70px;
-  padding-block: 25px;
+  padding-bottom: 25px;
 }
 
 .banner__container {
@@ -244,8 +244,8 @@ nav {
   height: 500px;
 }
 .banner {
-  background: #FEFEF2;
   padding: 25px 150px 0 110px;
+  background: #FEFEF2;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -255,7 +255,13 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: left;
+  z-index: 2;
 }
+
+.banner__img {
+  z-index: 1;
+}
+
 .fz-40 {
   font-size: 40px;
   color: var(--bg-color-blue_dark);
@@ -522,4 +528,153 @@ footer {
   padding-top: 10px;
 }
 
+.container__block__card {
+  background: var(--bg-color-blue);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  padding-inline: 70px;
+  padding-block: 35px 60px;
+}
+.container__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  cursor: pointer;
+}
 
+.banner2 {
+  position: relative;
+  background: #FEFEF2;
+  border-radius: 30px;
+  padding: 17px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+    width: 635px;
+}
+
+.banner__text__2 {
+  position: relative;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  z-index: 2;
+}
+
+.w300 {
+  width: 387px;
+}
+
+.block__h {
+  color: var(--bg-light-color);
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+.current {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: solid 2px var(--bg-color-blue_dark);
+}
+
+.lastTour__container {
+  display: grid;
+  grid-template-columns: 550px 300px 161px 195px;
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  padding-inline: 70px;
+  padding-bottom: 75px;
+}
+.lastTour__card {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/lastTour/bg_1.png);
+  width: 550px;
+  height: 430px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  padding: 45px 0 0 45px;
+  gap: 5px;
+}
+
+.lastTour__card__h,.lastTour__card__h__3,.lastTour__card__h__4,.lastTour__card__h__5 {
+  color: var(--bg-color-blue_dark);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lastTour__card__h,.lastTour__card__h__2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.lastTour__card__text__5 {
+  font-size: 12px;
+  color: var(--bg-color-blue_dark);
+  font-weight: 300;
+}
+.lastTour__card__2 {
+  background: url(../img/lastTour/Group\ 234.png);
+  width: 491px;
+  height: 200px;
+  grid-column: 2 /  2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 0 0 20px;
+}
+
+.lastTour__card__text {
+  font-size: 18px;
+}
+
+.lastTour__card__h__2 {
+  color: var(--bg-light-color);
+}
+.lastTour__card__text__2 {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--bg-light-color);
+}
+.lastTour__card__3 {
+  background: url(../img/lastTour/coffe.png);
+  width: 300px;
+  height: 200px;
+  grid-column: 2;
+  grid-row: 2;
+    display: flex;
+  flex-direction: column;
+  gap: 5px;
+    padding: 20px 0 0 20px;
+}
+
+.lastTour__card__4 {
+  background-image: url(../img/lastTour/copilka.png);
+  width: 161px;
+  height: 200px;
+  grid-column: 3;
+  grid-row: 2;
+    display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 0 0 15px;
+}
+
+.lastTour__card__5 {
+  background-image: url(../img/lastTour/bg_5.png);
+  width: 195px;
+  height: 430px;
+  grid-column: 4;
+  grid-row: 1 /2;
+    display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 20px 0 20px;
+}
