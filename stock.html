@@ -70,7 +70,78 @@
     </nav>
   </header>
   <main>
-    <!-- INPUT -->
+    <div class="main_form">
+        <ul class="main_form_title">
+          <li class="active_section">Туры</li>
+          <li>Отели</li>
+        </ul>
+        <div class="main_form_inputs">
+          <div class="main_form_input">
+            <label for="">Откуда</label>
+            <input class="style_inp" type="text" placeholder="Вологда" />
+          </div>
+          <div class="main_form_input">
+            <label for="">Куда</label>
+            <div class="wrap_input style_inp">
+              <img src="img/form/search.png" alt="" />
+              <select class="custom_select_form ">
+                <option value="" selected disabled>
+                  Страна, город или отель
+                </option>
+                <option value="">Вологда</option>
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="ekaterinburg">Екатеринбург</option>
+                <option value="kazan">Казань</option>
+              </select>
+            </div>
+          </div>
+          <div class="main_form_input">
+            <label for="">Период вылета</label>
+            <input class="style_inp" type="date" placeholder="Даты вылета" />
+          </div>
+          <div class="main_form_input max_width_select">
+            <label for="">Ночей</label>
+            <div class="wrap_input style_inp ">
+              <div></div>
+              <select class="custom_select_form min_select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="main_form_input max_width_select">
+            <label for="">Туристы</label>
+            <div class="wrap_input style_inp">
+              <img src="img/form/people.png" alt="" />
+              <select class="custom_select_form min_select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <button class="button_search style_inp">
+            <img src="img/form/magnifier_search.png" alt="" />
+            <p>Поиск</p>
+          </button>
+        </div>
+      </div>
+      <div class="location">
+        <a href="index.html">
+          <p class="location__text">Главная</p>
+        </a>
+        /
+        <a href="tourGudes.html">
+          <p class="location__text">Подбор тура</p>
+        </a>
+      </div>
   </main>
   <footer>
     <div class="footer__container">

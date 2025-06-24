@@ -69,7 +69,7 @@
     </header>
     <main>
       <section class="welcome_block">
-        <div class=" main_form">
+        <div class="main_form">
           <ul class="main_form_title">
             <li class="active_section">Туры</li>
             <li>Отели</li>
@@ -81,10 +81,12 @@
             </div>
             <div class="main_form_input">
               <label for="">Куда</label>
-              <div class="wrap_input style_inp">
+              <div class="wrap_input style_inp fix_select_width">
                 <img src="img/form/search.png" alt="" />
-                <select class="custom_select_form">
-                  <option value="" selected disabled>Страна, город или отель</option>
+                <select class="custom_select_form ">
+                  <option value="" selected disabled>
+                    Страна, город или отель
+                  </option>
                   <option value="">Вологда</option>
                   <option value="moscow">Москва</option>
                   <option value="spb">Санкт-Петербург</option>
@@ -100,9 +102,9 @@
             </div>
             <div class="main_form_input">
               <label for="">Ночей</label>
-              <div class="wrap_input style_inp ">
+              <div class="wrap_input style_inp">
                 <div></div>
-                <select class=" custom_select_form min_select" >
+                <select class="custom_select_form min_select">
                   <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -125,25 +127,73 @@
               </div>
             </div>
             <button class="button_search style_inp">
-              <img src="img/form/magnifier_search.png" alt="">
+              <img src="img/form/magnifier_search.png" alt="" />
               <p>Поиск</p>
             </button>
           </div>
         </div>
         <div class="welcome_text">
-          <h1 class="font_h">Совершенный отдых в Таиланде</h1>
-          <p class="font_h">Для тех, кто выбирает комфорт</p>
+          <div class="wrap_text">
+            <h1 class="font_h">Совершенный отдых в Таиланде</h1>
+            <p class="font_h">Для тех, кто выбирает комфорт</p>
+          </div>
           <button class="btn_def">Выбрать тур</button>
         </div>
       </section>
       <section class="last_minute_deals">
-        <div class="deals_title">
-          
+        <div class="deals_header">
+          <div class="deals_title">Горящие предложения</div>
+          <ul class="deals_list">
+            <li class="btn_def">Турция</li>
+            <li>ОАЭ</li>
+            <li>Египет</li>
+            <li>Куба</li>
+            <li>Таиланд</li>
+            <li>Россия</li>
+          </ul>
         </div>
+        <div class="wrap_scroll_deals">
+      <div class="srolls">
+        <button class="scroll_left_deals arrow_deals "><img src="img/arrow.png" alt=""></button>
+        <button class="scroll_right_deals arrow_deals "><img src="img/arrow.png" alt=""></button>
+        <div class="scroll_bar_deals">
+          <div class="deals_cards">
+            <div class="deals_card">
+              <img class="deals_card_img" src="img/deals_cards/deals_cards_1.png" alt="">
+              <div class="deals_card_location">
+                <img class="img_location" src="img/stars/location.png" alt="">
+                Турция, Аланья
+              </div>
+              <h2 class="deals_card_title">ANANAS HOTEL</h2>
+              <div class="deals_card_stars">
+                <img src="img/stars/star.png" alt="">
+                <img src="img/stars/star.png" alt="">
+                <img src="img/stars/star.png" alt="">
+                <img src="img/stars/star.png" alt="">
+                <img src="img/stars/grey_star.png" alt="">
+              </div>
+              <div>
+                <p class="deals_card_price_from"></p>
+                <div class="deals_card_price">109 362,54 ₽</div>
+              </div>
+              <div class="deals_card_info">
+                29.11.2024 - 06.12.2024</br>
+                Взрослых: 2 - Ночей: 7
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="scroll_points">
+          <div class="scroll_point point_1 point_active"></div>
+          <div class="scroll_point point_2"></div>
+          <div class="scroll_point point_3"></div>
+          <div class="scroll_point point_4"></div>
+        </div>
+      </div>
+    </div>
       </section>
     </main>
+    <script src="js/last_minute_deals.js"></script>
   </body>
-  
 </html>
-
-

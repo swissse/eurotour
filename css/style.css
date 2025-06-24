@@ -95,6 +95,10 @@ nav {
   font-family: "Manrope", sans-serif;
 }
 
+.main_form{
+  width: 1440px;
+  padding: 30px 60px;
+}
 
 .main_form_title{
   display: flex;
@@ -103,6 +107,7 @@ nav {
   padding-bottom: 10px;
   margin-bottom: 30px;
   font-size: 20px;
+  color: var(--bg-color-blue_dark);
 }
 
 .active_section{
@@ -119,6 +124,12 @@ nav {
   img{
     object-fit: contain;
   }
+  flex: 1;
+  input{
+    width: 100%;
+  }
+
+
 }
 
 .style_inp{
@@ -130,17 +141,18 @@ nav {
 
 .wrap_input{
   display: flex;
+  justify-content: space-between;
   gap: 10px;
 }
 
 .custom_select_form{
-  max-width: 305px;
+  width: 100%;
 }
 
 .main_form_inputs{
   display: flex;
-  /* justify-content: center; */
   gap: 7px;
+  width: 100%;
 }
 
 .button_search{
@@ -149,10 +161,8 @@ nav {
   margin-top: auto;
   background-color: var(--bg-color-blue);
   color: var(--main-color);
-}
-
-.min_select{
-  width: 80px;
+  max-width: 170px;
+  width: 100%;
 }
 
 .btn_def{
@@ -160,7 +170,7 @@ nav {
   background-color: var(--bg-color-blue);
   color: var(--bg-light-color);
   font-size: 12px;
-  max-width: 130px;
+  border-radius: 60px;
 }
 
 .welcome_block{
@@ -168,7 +178,8 @@ nav {
   width: 1360px;
   height: 700px;
   border-radius: 60px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 20px;
   background: url(../img/header_scroll/bg_img_1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,14 +197,24 @@ nav {
   }
 
   .welcome_text{
+    
     position: absolute;
     bottom: 95px;
     left: 65px;
     font-weight: 100;
     color: var(--bg-light-color);
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
+
+    .wrap_text{
+      background-color: rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 40px;
+      /* backdrop-filter: blur(2px); */
+    }
+
     h1{
       font-size: 52px;
     }
@@ -201,8 +222,6 @@ nav {
     p{
       font-size: 24px;
     }
-
-
   }
 }
 
@@ -365,3 +384,142 @@ footer {
   align-items: center;
   gap: 50px;
 }
+
+.fix_select_width{
+  min-width: 245px;
+}
+
+.max_width_select{
+  max-width: 150px;
+}
+
+
+.deals_header{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 105px;
+  padding-block: 45px;
+}
+
+.deals_title{
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--bg-color-blue);
+}
+
+.deals_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--bg-color-blue_dark);
+  font-weight: 500;
+  
+  li{
+    width: 110px;
+    text-align: center;
+  }
+}
+
+
+
+.wrap_scroll_deals {
+  background-color: var(--main-bg);
+  padding-top: 100px;
+}
+
+.srolls__1 {
+  width: 1470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+.scroll_left__1 {
+  left: 0;
+}
+
+
+.arrow__1 {
+  background-color: var(--yellow-bg);
+  width: 70px;
+  height: 70px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+.scroll_bar__1 {
+  background-color: var(--card-bg);
+  display: flex;
+  width: 1400px;
+  /* justify-content: space-between; */
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.deals_cards {
+  display: flex;
+  gap: 25px;
+}
+
+.deals_card{
+  padding: 10px;
+  background-color: var(--main-color);
+}
+
+.scroll_points {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.scroll_point {
+  background-color: #53626F;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.point_active {
+  background-color: var(--yellow-bg);
+}
+
+.deals_card_img{
+  border-radius: 15px;
+}
+
+.last_minute_deals{
+  background: url(../img/stars/main_deals.png);
+  background-size: cover;
+}
+
+.deals_card_location{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bg-color-blue_dark);
+  padding-top: 10px;
+}
+
+

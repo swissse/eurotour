@@ -68,154 +68,160 @@
         <img src="img/header/MINI SEARCH.png" alt="" />
       </nav>
     </header>
-  <main>
-    <div class="location">
-      <a href="index.html">
-        <p class="location__text">Главная</p>
-      </a>
-      /
-      <a href="tourGudes.html">
-        <p class="location__text">Подбор тура</p>
-      </a>
-    </div>
-    <div class="banner__container">
-      <div class="banner">
-        <div class="banner__text">
-          <p>
-            <span class="fz-40 font_h">Поможем найти</span><br>
-            <span class="fz-54 font_h">отличный тур</span><br>
-            <span class="fz-40 font_h">за 2 минуты</span>
+    <main>
+      <div class="main_form">
+        <ul class="main_form_title">
+          <li class="active_section">Туры</li>
+          <li>Отели</li>
+        </ul>
+        <div class="main_form_inputs">
+          <div class="main_form_input">
+            <label for="">Откуда</label>
+            <input class="style_inp" type="text" placeholder="Вологда" />
+          </div>
+          <div class="main_form_input">
+            <label for="">Куда</label>
+            <div class="wrap_input style_inp">
+              <img src="img/form/search.png" alt="" />
+              <select class="custom_select_form ">
+                <option value="" selected disabled>
+                  Страна, город или отель
+                </option>
+                <option value="">Вологда</option>
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="ekaterinburg">Екатеринбург</option>
+                <option value="kazan">Казань</option>
+              </select>
+            </div>
+          </div>
+          <div class="main_form_input">
+            <label for="">Период вылета</label>
+            <input class="style_inp" type="date" placeholder="Даты вылета" />
+          </div>
+          <div class="main_form_input max_width_select">
+            <label for="">Ночей</label>
+            <div class="wrap_input style_inp ">
+              <div></div>
+              <select class="custom_select_form min_select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="main_form_input max_width_select">
+            <label for="">Туристы</label>
+            <div class="wrap_input style_inp">
+              <img src="img/form/people.png" alt="" />
+              <select class="custom_select_form min_select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <button class="button_search style_inp">
+            <img src="img/form/magnifier_search.png" alt="" />
+            <p>Поиск</p>
+          </button>
+        </div>
+      </div>
+      <div class="location">
+        <a href="index.html">
+          <p class="location__text">Главная</p>
+        </a>
+        /
+        <a href="tourGudes.html">
+          <p class="location__text">Подбор тура</p>
+        </a>
+      </div>
+      <div class="banner__container">
+        <div class="banner">
+          <div class="banner__text">
+            <p>
+              <span class="fz-40 font_h">Поможем найти</span><br />
+              <span class="fz-54 font_h">отличный тур</span><br />
+              <span class="fz-40 font_h">за 2 минуты</span>
+            </p>
+            <button class="banner__btn">Связаться</button>
+          </div>
+          <img src="img/header/image 6.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="col__1">
+          <h2 class="col__h">Компания</h2>
+          <div class="col__text__container">
+            <p class="col__text__container">О ЕвроТур</p>
+            <p class="col__text__container">Благодарности</p>
+            <p class="col__text__container">Пресса о ЕвроТур</p>
+            <p class="col__text__container">Вакансии</p>
+            <p class="col__text__container">Реквизиты компании</p>
+            <p class="col__text__container">Оставить отзыв</p>
+          </div>
+        </div>
+        <div class="col__2">
+          <h2 class="col__h">Бронирование</h2>
+          <div class="col__text__container">
+            <p class="col__text__container">Контакты</p>
+            <p class="col__text__container">Как забронировать онлайн</p>
+            <p class="col__text__container">Акции</p>
+            <p class="col__text__container">Программа лояльности</p>
+          </div>
+        </div>
+        <div class="col__3">
+          <h2 class="col__h">Страны</h2>
+          <div class="col__text__container">
+            <p class="col__text__container">Турция</p>
+            <p class="col__text__container">ОАЭ</p>
+            <p class="col__text__container">Египет</p>
+            <p class="col__text__container">Куба</p>
+            <p class="col__text__container">Таиланд</p>
+            <p class="col__text__container">Мальдивы</p>
+          </div>
+        </div>
+        <div class="col__newsletter">
+          <h2 class="col__newsletter__h">Подпишитесь на наши рассылки:</h2>
+          <p class="col__newsletter__text">
+            Получайте лучшие и самые выгодные<br />
+            предложения!
           </p>
-          <button class="banner__btn">Связаться</button>
-        </div>
-        <img src="img/header/image 6.png" alt="">
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer__container">
-      <div class="col__1">
-        <h2 class="col__h">Компания</h2>
-        <div class="col__text__container">
-          <p class="col__text__container">О ЕвроТур</p>
-          <p class="col__text__container">Благодарности</p>
-          <p class="col__text__container">Пресса о ЕвроТур</p>
-          <p class="col__text__container">Вакансии</p>
-          <p class="col__text__container">Реквизиты компании</p>
-          <p class="col__text__container">Оставить отзыв</p>
-        </div>
-      </div>
-      <div class="col__2">
-        <h2 class="col__h">Бронирование</h2>
-        <div class="col__text__container">
-          <p class="col__text__container">Контакты</p>
-          <p class="col__text__container">Как забронировать онлайн</p>
-          <p class="col__text__container">Акции</p>
-          <p class="col__text__container">Программа лояльности</p>
-        </div>
-      </div>
-      <div class="col__3">
-        <h2 class="col__h">Страны</h2>
-        <div class="col__text__container">
-          <p class="col__text__container">Турция</p>
-          <p class="col__text__container">ОАЭ</p>
-          <p class="col__text__container">Египет</p>
-          <p class="col__text__container">Куба</p>
-          <p class="col__text__container">Таиланд</p>
-          <p class="col__text__container">Мальдивы</p>
-        </div>
-      </div>
-      <div class="col__newsletter">
-        <h2 class="col__newsletter__h">Подпишитесь на наши рассылки:</h2>
-        <p class="col__newsletter__text">Получайте лучшие и самые выгодные<br>
-          предложения!</p>
-        <button class="col__newsletter__btn">Введите E-mail <img class="arr__btn" src="img/footer/Mask group (11).png"
-            alt=""></button>
-        <div class="footer__social">
-          <img src="img/footer/Mask group (12).png" alt="">
-          <img src="img/footer/Mask group (13).png" alt="">
-        </div>
-        <button class="col__newsletter__btn2"><img src="img/footer/support-svgrepo-com 1.png" alt="">+7
-          (953) 505 16-50</button>
-        <div class="curs__container">
-          <div class="curs">
-            <img src="img/country/image 7.png" alt="">
-            106,50
+          <button class="col__newsletter__btn">
+            Введите E-mail
+            <img class="arr__btn" src="img/footer/Mask group (11).png" alt="" />
+          </button>
+          <div class="footer__social">
+            <img src="img/footer/Mask group (12).png" alt="" />
+            <img src="img/footer/Mask group (13).png" alt="" />
           </div>
-          <div class="curs">
-            <img src="img/country/image 8.png" alt="">
-            112,58
+          <button class="col__newsletter__btn2">
+            <img src="img/footer/support-svgrepo-com 1.png" alt="" />+7 (953)
+            505 16-50
+          </button>
+          <div class="curs__container">
+            <div class="curs">
+              <img src="img/country/image 7.png" alt="" />
+              106,50
+            </div>
+            <div class="curs">
+              <img src="img/country/image 8.png" alt="" />
+              112,58
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer__social__bottom">
-      <img src="img/footer/ткп_300520241520331.png" alt="">
-      <img src="img/footer/tour-stage 1.png" alt="">
-    </div>
-  </footer>
-    <!-- <div class="main_form">
-      <ul class="main_form_title">
-        <li class="active_section">Туры</li>
-        <li>Отели</li>
-      </ul>
-      <div class="main_form_inputs">
-        <div class="main_form_input">
-          <label for="">Откуда</label>
-          <input class="style_inp" type="text" placeholder="Вологда" />
-        </div>
-        <div class="main_form_input">
-          <label for="">Куда</label>
-          <div class="wrap_input style_inp">
-            <img src="img/form/search.png" alt="" />
-            <select class="custom_select_form">
-              <option value="" selected disabled>
-                Страна, город или отель
-              </option>
-              <option value="">Вологда</option>
-              <option value="moscow">Москва</option>
-              <option value="spb">Санкт-Петербург</option>
-              <option value="novosibirsk">Новосибирск</option>
-              <option value="ekaterinburg">Екатеринбург</option>
-              <option value="kazan">Казань</option>
-            </select>
-          </div>
-        </div>
-        <div class="main_form_input">
-          <label for="">Период вылета</label>
-          <input class="style_inp" type="date" placeholder="Даты вылета" />
-        </div>
-        <div class="main_form_input">
-          <label for="">Ночей</label>
-          <div class="wrap_input style_inp">
-            <div></div>
-            <select class="custom_select_form min_select">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
-        <div class="main_form_input">
-          <label for="">Туристы</label>
-          <div class="wrap_input style_inp">
-            <img src="img/form/people.png" alt="" />
-            <select class="custom_select_form min_select">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
-        <button class="button_search style_inp">
-          <img src="img/form/magnifier_search.png" alt="" />
-          <p>Поиск</p>
-        </button>
+      <div class="footer__social__bottom">
+        <img src="img/footer/ткп_300520241520331.png" alt="" />
+        <img src="img/footer/tour-stage 1.png" alt="" />
       </div>
-    </div> -->
+    </footer>
   </body>
 </html>
