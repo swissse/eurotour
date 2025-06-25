@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="header">
-        <img src="img/header/Vector Smart Object 1.png" alt="" />
+        <a href="index.html"><img src="img/header/Vector Smart Object 1.png" alt=""></a>
         <div class="header__container">
           <div class="icon__container">
             <div class="icon__text__container">
@@ -58,11 +58,11 @@
             Меню
           </button>
           <ul class="nav__ul">
-            <li><a href="#">Тургайд</a></li>
-            <li><a href="#">Отели</a></li>
-            <li><a href="#">Горящие туры</a></li>
-            <li><a href="#">Акции</a></li>
-          </ul>
+          <li><a href="tourGudes.html">Тургайд</a></li>
+          <li><a href="hotels.html" class="current">Отели</a></li>
+          <li><a href="lastTour.html" >Горящие туры</a></li>
+          <li><a href="stock.html">Акции</a></li>
+        </ul>
         </div>
         <img src="img/header/MINI SEARCH.png" alt="" />
       </nav>
@@ -674,6 +674,111 @@
           </div>
         </div>
       </section>
+      <div class="reservation__container">
+      <div class="reservation__nav__selected">
+        <ul class="reservation__nav">
+          <li>Все отели</li>
+          <li>Египет</li>
+          <li>ОАЭ</li>
+          <li>Таиланд</li>
+        </ul>
+        <div class="nav__selected">
+          <select class="selected" name="" id="">
+            <option value="" selected>из Москвы</option>
+            <option value="">из Вологды</option>
+            <option value="">из Омска</option>
+          </select>
+          <select class="selected" name="" id="">
+            <option value="" selected>Декабрь</option>
+            <option value="">Январь</option>
+            <option value="">Февраль</option>
+          </select>
+        </div>
+      </div>
+      <div class="reservation__card">
+        <div class="reservation__card__img">
+          <button class="white__bg">Рекомендуем</button>
+          <button class="blue__bg">Эксклюзив</button>
+        </div>
+        <div class="reservation__card__review">
+          <div class="reservation__card__review__location">
+            <img src="img/reservation/Map pin (1).png" alt="">
+            ОАЭ, Дубай
+          </div>
+
+          <div class="reservation__card__review__stars">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+          </div>
+          <h2 class="reservation__card__review__h">FIRST CENTRAL<br>
+            HOTEL SUITES</h2>
+        </div>
+
+        <div class="reservation__card__prices">
+          <div>
+            <h2 class="reservation__card__prices__h">Только отель</h2>
+            <div class="reservation__card__prices__human">
+              <p class="reservation__card__prices__human__small">
+                цена от:
+              </p>
+              <h2 class="reservation__card__prices__human__big">
+                69 343 ₽ / чел.
+              </h2>
+            </div>
+          </div>
+          <button class="reservation__card__prices__btn">Выбрать</button>
+        </div>
+      </div>
+      <div class="reservation__card pd__top">
+        <div class="reservation__card__img2">
+          <button class="white__bg">Рекомендуем</button>
+          <button class="blue__bg">Эксклюзив</button>
+        </div>
+        <div class="reservation__card__review">
+          <div class="reservation__card__review__location">
+            <img src="img/reservation/Map pin (1).png" alt="">
+            ОАЭ, Фуджейра
+          </div>
+
+          <div class="reservation__card__review__stars">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+          </div>
+          <h2 class="reservation__card__review__h">AL BUSTAN<br>
+            CENTRE & RESIDENCE</h2>
+        </div>
+
+        <div class="reservation__card__prices">
+          <div>
+            <h2 class="reservation__card__prices__h">Только отель</h2>
+            <div class="reservation__card__prices__human">
+              <p class="reservation__card__prices__human__small">
+                цена от:
+              </p>
+              <h2 class="reservation__card__prices__human__big">
+                72 145 ₽ / чел.
+              </h2>
+            </div>
+          </div>
+          <button class="reservation__card__prices__btn">Выбрать</button>
+        </div>
+      </div>
+      <div class="reservation__card__page">
+        <img class="reservation__card__page__arr right" src="img/footer/Mask group (11).png" alt="">
+        <button class="reservation__card__page__square">1</button>
+        <button class="reservation__card__page__square">2</button>
+        <button class="reservation__card__page__square">3</button>
+        <button class="reservation__card__page__square">4</button>
+        <button class="reservation__card__page__square">5</button>
+        <img class="reservation__card__page__arr left" src="img/footer/Mask group (11).png" alt="">
+      </div>
+    </div>
     </main>
     <footer class="">
       <div class="footer__container">
@@ -714,10 +819,10 @@
             Получайте лучшие и самые выгодные<br />
             предложения!
           </p>
-          <button class="col__newsletter__btn">
-            Введите E-mail
+          <div class="col__newsletter__btn">
+            <input type="text" placeholder="Введите E-mail">
             <img class="arr__btn" src="img/footer/Mask group (11).png" alt="" />
-          </button>
+          </div>
           <div class="footer__social">
             <img src="img/footer/Mask group (12).png" alt="" />
             <img src="img/footer/Mask group (13).png" alt="" />
