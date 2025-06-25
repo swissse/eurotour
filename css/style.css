@@ -97,7 +97,7 @@ nav {
 
 .main_form{
   width: 1440px;
-  padding: 30px 60px;
+  padding: 30px 70px;
 }
 
 .main_form_title{
@@ -166,11 +166,13 @@ nav {
 }
 
 .btn_def{
-  padding: 16px 28px;
+  padding: 16px 21px;
   background-color: var(--bg-color-blue);
   color: var(--bg-light-color);
   font-size: 12px;
   border-radius: 60px;
+  max-width: 130px;
+  font-weight: 400;
 }
 
 .welcome_block{
@@ -233,7 +235,6 @@ nav {
   display: flex;
   gap: 5px;
   padding-inline: 70px;
-  padding-block: 25px;
 }
 
 .banner__container {
@@ -425,27 +426,35 @@ footer {
 
 .wrap_scroll_deals {
   background-color: var(--main-bg);
-  padding-top: 100px;
 }
 
-.srolls__1 {
-  width: 1470px;
+.srolls_deals {
+  width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin: auto;
+  margin-bottom: 50px;
 }
 
-.scroll_left__1 {
-  left: 0;
+.scroll_left {
+  left: 50px;
+  img{
+    width: 40px;
+    height: 40px;
+    rotate: 180deg;
+  }
 }
 
+.scroll_right{
+  right: 50px;
+}
 
-.arrow__1 {
-  background-color: var(--yellow-bg);
-  width: 70px;
-  height: 70px;
+.arrow_deals {
+  background-color: var(--bg-color-blue);
+  width: 55px;
+  height: 55px;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -456,8 +465,8 @@ footer {
   z-index: 999;
 
   img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -478,31 +487,37 @@ footer {
 }
 
 .deals_card{
+  width: 352px;
   padding: 10px;
   background-color: var(--main-color);
+  border-radius: 15px;
 }
 
 .scroll_points {
   display: flex;
+  justify-content: center;
   gap: 10px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 35px;
   margin-top: 10px;
 }
 
 .scroll_point {
-  background-color: #53626F;
-  width: 10px;
-  height: 10px;
+  background-color: rgba(72, 106, 118, 0.5);
+
+  width: 20px;
+  height: 20px;
   border-radius: 9999px;
   cursor: pointer;
   transition: all .2s;
 }
 
-.point_active {
-  background-color: var(--yellow-bg);
+.point_certificates_active,
+.point_choose_tour_active,
+.point_pay_attention_active,
+.point_other_directions_active,
+.point_russian_cities_active,
+.point_cities_turkey_active {
+  background-color: var(--bg-color-blue_dark);
 }
 
 .deals_card_img{
@@ -510,8 +525,9 @@ footer {
 }
 
 .last_minute_deals{
-  background: url(../img/stars/main_deals.png);
+  background: url(../img/main_deals.png);
   background-size: cover;
+
 }
 
 .deals_card_location{
@@ -522,4 +538,677 @@ footer {
   padding-top: 10px;
 }
 
+.deals_card_title{
+  font-size: 24px;
+  color: var(--bg-color-blue_dark);
+  padding-block: 2px 15px;
+  font-weight: 500;
+}
+
+.deals_card_stars{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.deals_card_price_from{
+  font-size: 10px;
+  color: var(--bg-color-blue_dark);
+  padding-block: 3px;
+
+}
+
+.deals_card_price{
+  font-size: 24px;
+  color: var(--bg-color-blue);
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(72, 106, 118, 0.35);
+}
+
+.deals_card_info{
+  font-size: 8px;
+  padding-top: 5px;
+  color: var(--bg-color-blue_dark);
+}
+
+.scroll_bar_deals{
+  display: flex;
+  gap: 20px;
+  width: 1096px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.certificates_card{
+  min-width: 1085px;
+  height: 300px;
+  display: flex;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+
+.certificates_card_title{
+  font-size: 32px;
+  padding: 25px;
+  font-weight: 500;
+  color: var(--bg-color-blue_dark);
+}
+
+.scroll_bar_certificates{
+  margin: auto;
+  position: relative;
+  width: 1085px;
+  overflow: hidden;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+
+.srolls_certificates{
+  position: relative;
+}
+
+.srolls_barcelo{
+  position: relative;
+}
+
+.barcelo_card{
+  min-width: 1440px;
+  height: 550px;
+  background: url(../img/barcelo.png);
+  display: flex;
+  align-items: center;
+}
+
+.barcelo_card_title{
+  margin-left: 150px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  width: auto;
+  text-align: center;
+  border-radius: 30px;
+  color: var(--bg-light-color);
+  display: flex;
+  flex-flow: column;
+  padding: 17px 35px;
+
+  h2{
+    font-size: 110px;
+    font-weight: 700;
+  }
+
+  h3{
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.srolls_barcelo{
+  .arrow_deals{
+    background-color: var(--bg-light-color);
+    transform: translateY(0);
+  }
+}
+
+.scroll_bar_barcelo{
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.concept{
+  width: 1130px;
+  height: 340px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  margin-block: 75px;
+}
+
+
+.concept_block_1{
+  width: 850px;
+  height: 100%;
+  background: url(../img/concept/concept_bg_1.svg);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: end;
+  padding: 30px;
+
+  img{
+    margin-bottom: 10px;
+  }
+}
+
+.concept_block_2{
+  width: 250px;
+  background: url(../img/concept/concept_bg_2.svg);
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  gap: 10px;
+
+  button{
+    font-weight: 400;
+    width: 130px;
+  }
+}
+
+.concept_block{
+  border-radius: 50px;
+}
+
+.concept_block_2_text{
+  bottom: 0;
+}
+
+.barcelo{
+  margin-block: 75px;
+}
+
+
+.reservations{
+  background-color: var(--bg-color-blue);
+  width: 100%;
+  height: 500px;
+  padding: 100px 155px;
+  position: relative;
+  color: var(--bg-light-color);
+  font-weight: 400;
+
+  button{
+    max-width: 130px;
+    padding: 15px 21px;
+  }
+}
+
+.reservations_text{
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.reservations_img{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+
+.reservations_title{
+  font-size: 32px;
+}
+
+.reservations_list{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.step_list{
+  font-weight: 500;
+}
+
+.reservations_phrase{
+  font-size: 18px;
+}
+
+.btn_light{
+  background-color: var(--bg-light-color);
+  color: var(--bg-color-blue);
+  padding: 15px 21px;
+}
+
+.choose_tour{
+  position: relative;
+  padding-block: 75px;
+  background: url(../img/choose_tour/bg_img.png);
+}
+
+.scroll_bar_choose_tour{
+  width: 1130px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.choose_tour_card{
+  min-width: 1130px;
+  height: 550px;
+  background: url(../img/choose_tour/card_bg_img.svg);
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.choose_tour_card_text{
+  width: 550px;
+  height: 100%;
+  background-color: var(--bg-light-color);
+  border-radius: 20px;
+  padding: 40px 50px;
+}
+
+.choose_tour_header{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.choose_tour_location{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--bg-color-blue_dark);
+}
+
+.choose_tour_main{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  color: var(--bg-color-blue_dark);
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+
+  h2{
+    font-size: 36px;
+  }
+}
+
+.choose_tour_card_text{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.scroll_points_choose_tour{
+  top: calc(100% - 50px);
+}
+
+
+.footer_black{
+  background-color: var(--footer-bg-color);
+
+  *, p{
+    color: var(--bg-light-color);
+  }
+}
+
+.pay_attention_card{
+  min-width: 265px;
+  height: 222px;
+  border-radius: 20px;
+  padding: 20px 20px 15px 20px;
+  color: var(--bg-color-blue_dark);
+  font-size: 20px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.pay_attention_card_1{
+  background: url(../img/pay_attention/img_1.svg);
+  background-size: cover;
+}
+
+.pay_attention_card_2{
+  background: url(../img/pay_attention/img_2.svg);
+  background-size: cover;
+}
+
+.pay_attention_card_3{
+  background: url(../img/pay_attention/img_3.svg);
+  background-size: cover;
+}
+
+.pay_attention_card_4{
+  background: url(../img/pay_attention/img_4.svg);
+  background-size: cover;
+}
+
+.pay_attention_scroll_bar{
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 1135px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.pos_rel{
+  position: relative;
+}
+
+.pay_attention_scroll{
+  padding-block: 35px 70px;
+  position: relative;
+}
+
+.color_white{
+
+}
+
+
+/* .scroll_points_pay_attention{
+  top: calc(100% - 70px);
+} */
+
+.color_white{
+  color: var(--bg-light-color);
+}
+
+.pay_attention_title{
+  /* padding-top: 50px; */
+  padding-left: 115px;
+}
+
+.pay_attention_title_padding{
+  padding-top: 50px;
+}
+
+.welcome_hotels{
+  padding: 125px 70px;
+  height: 672px;
+  width: 100%;
+  background: url(../img/hotels.png);
+  margin-top: 25px;
+}
+
+.welcome_text{
+  font-size: 50px;
+  color: var(--bg-light-color);
+}
+
+.text_weight{
+  font-weight: 700;
+}
+
+.reasons{
+  padding-inline: 70px;
+}
+
+.list_reasons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 35px 50px;
+}
+
+.reason{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reasons_text{
+  padding-block: 75px;
+  color: var(--bg-color-blue_dark);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.reason_img{
+  padding: 20px;
+  border-radius: 9999px;
+  background-color: var(--bg-color-blue);
+  z-index: -9999;
+}
+
+.reason_text{
+  width: 200px;
+}
+
+.btn_search_hotel{
+  font-size: 14px;
+  padding: 14px 14px;
+  border-radius: 10px;
+}
+
+.btn_position{
+  display: flex;
+  justify-content: center;
+}
+
+.card_country{
+  width: 306px;
+  height: 400px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  align-items: center;
+  padding: 50px;
+  gap: 95px;
+
+  transition: background 2s ease-in-out;
+}
+
+.card_country_1{
+  background: url(../img/popular_countries/img_1.svg);
+}
+
+.card_country_2{
+  background: url(../img/popular_countries/img_2.svg);
+}
+
+.card_country_3{
+  background: url(../img/popular_countries/img_3.svg);
+}
+
+.card_country_4{
+  background: url(../img/popular_countries/img_4.svg);
+}
+
+.name_country{
+  font-size: 36px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.card_country_text{
+  text-align: center;
+}
+
+.card_country{
+  transition: all .3s linear;
+
+  p,
+  button{
+    opacity: 0;
+  }
+
+}
+
+.card_country:hover{
+  background: none;
+  background-color: white;
+  color: var(--bg-color-blue_dark);
+
+  p,
+  button{
+    opacity: 1;
+  }
+
+}
+
+.list_countries{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 30px 70px;
+}
+
+.popular_countries{
+  width: 1300px;
+  margin: auto;
+}
+
+.other_directions_card_1{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/other_directions/img_1.png);
+}
+
+.other_directions_card_2{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/other_directions/img_2.png);
+}
+
+.other_directions_card_3{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/other_directions/img_3.png);
+}
+
+.other_directions_card_4{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/other_directions/img_4.png);
+}
+
+.other_directions_card_1:hover{
+  background: url(../img/other_directions/img_1.png);
+}
+
+.other_directions_card_2:hover{
+  background: url(../img/other_directions/img_2.png);
+}
+
+.other_directions_card_3:hover{
+  background: url(../img/other_directions/img_3.png);
+}
+
+.other_directions_card_4:hover{
+  background: url(../img/other_directions/img_4.png);
+}
+
+.other_directions_card,
+.russian_cities_card,
+.cities_turkey_card{
+  *{
+    transition: all .2s ease-in-out;
+
+  }
+  h2{
+    color: var(--bg-light-color);
+  }
+  button{
+    margin: auto;
+    opacity: 0;
+  }
+}
+
+.other_directions_card:hover,
+.russian_cities_card:hover,
+.cities_turkey_card:hover{
+  h2{
+    opacity: 0;
+  }
+  button{
+    opacity: 1;
+  }
+}
+
+
+.russian_cities_card_1{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/russian_cities/img_1.png);
+}
+
+.russian_cities_card_2{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/russian_cities/img_2.png);
+}
+
+.russian_cities_card_3{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/russian_cities/img_3.png);
+}
+
+.russian_cities_card_4{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/russian_cities/img_4.png);
+}
+
+.russian_cities_card_1:hover{
+  background: url(../img/russian_cities/img_1.png);
+}
+
+.russian_cities_card_2:hover{
+  background: url(../img/russian_cities/img_2.png);
+}
+
+.russian_cities_card_3:hover{
+  background: url(../img/russian_cities/img_3.png);
+}
+
+.russian_cities_card_4:hover{
+  background: url(../img/russian_cities/img_4.png);
+}
+
+
+.russian_cities_card{
+  *{
+    transition: all .2s ease-in-out;
+
+  }
+  h2{
+    color: var(--bg-light-color);
+  }
+  button{
+    margin: auto;
+    opacity: 0;
+  }
+}
+
+.russian_cities_card:hover{
+  h2{
+    opacity: 0;
+  }
+  button{
+    opacity: 1;
+  }
+}
+
+
+
+.cities_turkey_card_1{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/cities_turkey/img_1.png);
+}
+
+.cities_turkey_card_2{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/cities_turkey/img_2.png);
+}
+
+.cities_turkey_card_3{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/cities_turkey/img_3.png);
+}
+
+.cities_turkey_card_4{
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../img/cities_turkey/img_4.png);
+}
+
+.cities_turkey_card_1:hover{
+  background: url(../img/cities_turkey/img_1.png);
+}
+
+.cities_turkey_card_2:hover{
+  background: url(../img/cities_turkey/img_2.png);
+}
+
+.cities_turkey_card_3:hover{
+  background: url(../img/cities_turkey/img_3.png);
+}
+
+.cities_turkey_card_4:hover{
+  background: url(../img/cities_turkey/img_4.png);
+}
 
