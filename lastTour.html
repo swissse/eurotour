@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>eurotour</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="index.html"><img src="img/header/Vector Smart Object 1.png" alt=""></a>
+      <div class="header__container">
+        <div class="icon__container">
+          <div class="icon__text__container">
+            <img src="img/header/social/Phone.png" alt="">
+            <p class="icon__text">+7 (953) 505 16-50</p>
+          </div>
+          <div class="icon__text__container">
+            <img src="img/header/social/Map pin.png" alt="">
+            <p class="icon__text">Где купить</p>
+          </div>
+          <div class="icon__text__container">
+            <img src="img/header/social/Frame (1).png" alt="">
+            <select class="custom-select">
+              <option value="" selected disabled>Вологда</option>
+              <option value="moscow">Москва</option>
+              <option value="spb">Санкт-Петербург</option>
+              <option value="novosibirsk">Новосибирск</option>
+              <option value="ekaterinburg">Екатеринбург</option>
+              <option value="kazan">Казань</option>
+            </select>
+          </div>
+          <div class="icon__text__container">
+            <img src="img/header/social/Vector.png" alt="">
+            <select class="custom-select custom-select2">
+              <option value="" selected>₽ - русский</option>
+              <option value="moscow">$ - американский</option>
+            </select>
+          </div>
+        </div>
+        <div class="icon__container__2">
+          <img src="img/header/social/Layer_1.png" alt="">
+          <img src="img/header/social/b.png" alt="">
+          <img src="img/header/social/scales-svgrepo-com 1.png" alt="">
+        </div>
+        <div class="icon__container__3">
+          <img src="img/header/social/user 1.png" alt="">
+          <p class="icon__text">Войдите или зарегистрируйтесь</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="nav">
+        <button class="nav__btn">
+          <img src="img/header/Group 232.png" alt="">
+          Меню
+        </button>
+        <ul class="nav__ul">
+          <li><a href="tourGudes.html">Тургайд</a></li>
+          <li><a href="hotels.html">Отели</a></li>
+          <li><a href="lastTour.html" class="current">Горящие туры</a></li>
+          <li><a href="stock.html">Акции</a></li>
+        </ul>
+      </div>
+      <img src="img/header/MINI SEARCH.png" alt="">
+    </nav>
+  </header>
+  <main>
+    <div class="main_form">
+      <ul class="main_form_title">
+        <li class="active_section">Туры</li>
+        <li>Отели</li>
+      </ul>
+      <div class="main_form_inputs">
+        <div class="main_form_input">
+          <label for="">Откуда</label>
+          <input class="style_inp" type="text" placeholder="Вологда" />
+        </div>
+        <div class="main_form_input">
+          <label for="">Куда</label>
+          <div class="wrap_input style_inp">
+            <img src="img/form/search.png" alt="" />
+            <select class="custom_select_form ">
+              <option value="" selected disabled>
+                Страна, город или отель
+              </option>
+              <option value="">Вологда</option>
+              <option value="moscow">Москва</option>
+              <option value="spb">Санкт-Петербург</option>
+              <option value="novosibirsk">Новосибирск</option>
+              <option value="ekaterinburg">Екатеринбург</option>
+              <option value="kazan">Казань</option>
+            </select>
+          </div>
+        </div>
+        <div class="main_form_input">
+          <label for="">Период вылета</label>
+          <input class="style_inp" type="date" placeholder="Даты вылета" />
+        </div>
+        <div class="main_form_input max_width_select">
+          <label for="">Ночей</label>
+          <div class="wrap_input style_inp ">
+            <div></div>
+            <select class="custom_select_form min_select">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="main_form_input max_width_select">
+          <label for="">Туристы</label>
+          <div class="wrap_input style_inp">
+            <img src="img/form/people.png" alt="" />
+            <select class="custom_select_form min_select">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <button class="button_search style_inp">
+          <img src="img/form/magnifier_search.png" alt="" />
+          <p>Поиск</p>
+        </button>
+      </div>
+    </div>
+    <div class="location">
+      <a href="index.html">
+        <p class="location__text">Главная</p>
+      </a>
+      /
+      <a href="stock.html">
+        <p class="location__text">Акции</p>
+      </a>
+    </div>
+    <div class="lastTour__container">
+      <div class="lastTour__card">
+        <h2 class="lastTour__card__h">Горящие туры</h2>
+        <p class="lastTour__card__text">Для тех, кто планирует отправиться
+          на отдых в ближайшие 3 недели</p>
+      </div>
+      <div class="lastTour__card__2">
+        <h2 class="lastTour__card__h__2">Горящие туры</h2>
+        <p class="lastTour__card__text__2">Горящий тур - это обычная путевка с близкой датой вылета,
+          которая продается перелет, проживание и страховка
+          со скидкой до 70%.</p>
+      </div>
+
+      <div class="lastTour__card__3">
+        <h2 class="lastTour__card__h__3">Позвольте<br>
+          себе больше</h2>
+      </div>
+
+      <div class="lastTour__card__4">
+        <h2 class="lastTour__card__h__4">Экономьте</h2>
+      </div>
+
+      <div class="lastTour__card__5">
+        <h2 class="lastTour__card__h__5">Не беспокойтесь</h2>
+        <p class="lastTour__card__text__5">Стройте краткосрочные
+          планы в изменчивые
+          времена</p>
+      </div>
+    </div>
+    <div class="reservation__container">
+      <div class="reservation__nav__selected">
+        <ul class="reservation__nav">
+          <li>Все отели</li>
+          <li>Египет</li>
+          <li>ОАЭ</li>
+          <li>Таиланд</li>
+        </ul>
+        <div class="nav__selected">
+          <select class="selected" name="" id="">
+            <option value="" selected>из Москвы</option>
+            <option value="">из Вологды</option>
+            <option value="">из Омска</option>
+          </select>
+          <select class="selected" name="" id="">
+            <option value="" selected>Декабрь</option>
+            <option value="">Январь</option>
+            <option value="">Февраль</option>
+          </select>
+        </div>
+      </div>
+      <div class="reservation__card">
+        <div class="reservation__card__img">
+          <button class="white__bg">Рекомендуем</button>
+          <button class="blue__bg">Эксклюзив</button>
+        </div>
+        <div class="reservation__card__review">
+          <div class="reservation__card__review__location">
+            <img src="img/reservation/Map pin (1).png" alt="">
+            ОАЭ, Дубай
+          </div>
+
+          <div class="reservation__card__review__stars">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+          </div>
+          <h2 class="reservation__card__review__h">FIRST CENTRAL<br>
+            HOTEL SUITES</h2>
+        </div>
+
+        <div class="reservation__card__prices">
+          <div>
+            <h2 class="reservation__card__prices__h">Только отель</h2>
+            <div class="reservation__card__prices__human">
+              <p class="reservation__card__prices__human__small">
+                цена от:
+              </p>
+              <h2 class="reservation__card__prices__human__big">
+                69 343 ₽ / чел.
+              </h2>
+            </div>
+          </div>
+          <button class="reservation__card__prices__btn">Выбрать</button>
+        </div>
+      </div>
+      <div class="reservation__card pd__top">
+        <div class="reservation__card__img2">
+          <button class="white__bg">Рекомендуем</button>
+          <button class="blue__bg">Эксклюзив</button>
+        </div>
+        <div class="reservation__card__review">
+          <div class="reservation__card__review__location">
+            <img src="img/reservation/Map pin (1).png" alt="">
+            ОАЭ, Фуджейра
+          </div>
+
+          <div class="reservation__card__review__stars">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+            <img src="img/reservation/Icon (6).png" alt="">
+          </div>
+          <h2 class="reservation__card__review__h">AL BUSTAN<br>
+            CENTRE & RESIDENCE</h2>
+        </div>
+
+        <div class="reservation__card__prices">
+          <div>
+            <h2 class="reservation__card__prices__h">Только отель</h2>
+            <div class="reservation__card__prices__human">
+              <p class="reservation__card__prices__human__small">
+                цена от:
+              </p>
+              <h2 class="reservation__card__prices__human__big">
+                72 145 ₽ / чел.
+              </h2>
+            </div>
+          </div>
+          <button class="reservation__card__prices__btn">Выбрать</button>
+        </div>
+      </div>
+      <div class="reservation__card__page">
+        <img class="reservation__card__page__arr right" src="img/footer/Mask group (11).png" alt="">
+        <button class="reservation__card__page__square">1</button>
+        <button class="reservation__card__page__square">2</button>
+        <button class="reservation__card__page__square">3</button>
+        <button class="reservation__card__page__square">4</button>
+        <button class="reservation__card__page__square">5</button>
+        <img class="reservation__card__page__arr left" src="img/footer/Mask group (11).png" alt="">
+      </div>
+    </div>
+    <div class="choice__container">
+      <h2 class="choice__container__h">На что обратить внимание при выборе горящего тура?</h2>
+      <div class="choice__container__text">
+        <p class="choice__text">На дату вылета.  У горящего тура всегда ближайшая дата вылета. Обычно это от 1 до 6 дней после покупки.</p>
+      <p class="choice__text">На набор услуг. В горящий тур всегда включен тот же набор услуг, что и в обычный: перелет, проживание, трансфер и страховка.</p>
+      <p class="choice__text">На туроператора. Выбирайте горящие туры на сайте крупного туроператора, чтобы не попасть на недобросовестные предложения на рынке.</p>
+      <p class="choice__text">На загранпаспорт. Перед покупкой горящего тура рекомендуем вам проверить срок действия вашего загранпаспорта. Если его срок действия заканчивается  через 4 недели или меньше, то некоторые страны не пропустят вас на  границе.</p>
+      </div>
+    </div>
+    <div class="feedback__container">
+      <div class="feedback__container__card">
+        <img class="feedback__container__card__img" src="img/feedback/Headphones.png" alt="">
+        <p class="feedback__container__card__phone">+7 (953) 505 16-50</p>
+        <p class="feedback__container__card__description">Отдел по борьбе с<br>
+частными клиентами,<br>
+вопросы по заказу</p>
+          <button class="choice__container__card__btn">Позвонить</button>
+      </div>
+      <div class="feedback__container__card">
+        <img class="feedback__container__card__img" src="img/feedback/Phone (1).png" alt="">
+        <p class="feedback__container__card__phone">+7 (953) 505 16-50</p>
+        <p class="feedback__container__card__description">Горячая линия для<br>
+туристов 24/7,<br>
+экстренные ситуации</p>
+          <button class="choice__container__card__btn">Позвонить</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer__container__dark__bg">
+    <div class="footer__container2">
+      <div class="col__1">
+        <h2 class="col__h light__text">Компания</h2>
+        <div class="col__text__container2">
+          <p class="col__text__container2">О ЕвроТур</p>
+          <p class="col__text__container2">Благодарности</p>
+          <p class="col__text__container2">Пресса о ЕвроТур</p>
+          <p class="col__text__container2">Вакансии</p>
+          <p class="col__text__container2">Реквизиты компании</p>
+          <p class="col__text__container2">Оставить отзыв</p>
+        </div>
+      </div>
+      <div class="col__2">
+        <h2 class="col__h light__text">Бронирование</h2>
+        <div class="col__text__container2">
+          <p class="col__text__container2">Контакты</p>
+          <p class="col__text__container2">Как забронировать онлайн</p>
+          <p class="col__text__container2">Акции</p>
+          <p class="col__text__container2">Программа лояльности</p>
+        </div>
+      </div>
+      <div class="col__3">
+        <h2 class="col__h light__text">Страны</h2>
+        <div class="col__text__container2">
+          <p class="col__text__container2">Турция</p>
+          <p class="col__text__container2">ОАЭ</p>
+          <p class="col__text__container2">Египет</p>
+          <p class="col__text__container2">Куба</p>
+          <p class="col__text__container2">Таиланд</p>
+          <p class="col__text__container2">Мальдивы</p>
+        </div>
+      </div>
+      <div class="col__newsletter">
+        <h2 class="col__newsletter__h light__text">Подпишитесь на наши рассылки:</h2>
+        <p class="col__newsletter__text2">Получайте лучшие и самые выгодные<br>
+          предложения!</p>
+        <button class="col__newsletter__btn4">Введите E-mail <img class="arr__btn2" src="img/footer/footerLight/Mask group (16).png"
+            alt=""></button>
+        <div class="footer__social">
+          <img src="img/footer/footerLight/Mask group (14).png" alt="">
+          <img src="img/footer/footerLight/Mask group (15).png" alt="">
+        </div>
+        <button class="col__newsletter__btn3"><img src="img/footer/footerLight/support-svgrepo-com 1 (1).png" alt="">+7
+          (953) 505 16-50</button>
+        <div class="curs__container">
+          <div class="curs light__text">
+            <img src="img/country/image 7.png" alt="">
+            106,50
+          </div>
+          <div class="curs light__text">
+            <img src="img/country/image 8.png" alt="">
+            112,58
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__social__bottom">
+      <img src="img/footer/footerLight/ткп_30052024152033 1.png" alt="">
+      <img src="img/footer/footerLight/tour-stage 1 (1).png" alt="">
+    </div>
+  </footer>
+</body>
+
+</html>
